@@ -1,7 +1,7 @@
-CLEAN_START: true  # Force chromium to clean start on each boot (That simply means do not show "Restore pages" dialog, you want this to be true in 99% of use cases)
+CLEAN_START: false  # Force chromium to clean start on each boot (That simply means do not show "Restore pages" dialog, you want this to be true in 99% of use cases)
 KIOSK: true # Run in kiosk mode, chromium will use whole screen without any way for user to close it, setting this to false is useful for web application debug (you can access chromium Inspect tool and so on) and initial chromium configuration
 TOUCHSCREEN: true # Enables support for touchscreen
-HOME_PAGE: 'https://salamek.github.io/chromium-kiosk/'  # Url to load as homepage
+HOME_PAGE: 'https://app.adsignage.co.uk/web/player'  # Url to load as homepage
 
 # These works only with chromium-kiosk installed
 IDLE_TIME: 0 # How log must be kiosk idle to redirect to HOME_PAGE, 0=disabled (Works only with chromium-kiosk extension installed)
