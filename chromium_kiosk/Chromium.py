@@ -42,7 +42,11 @@ class Chromium(object):
             '--disable-sync',
             '--fast',
             '--fast-start',
-            '--no-first-run'
+            '--no-first-run',
+            '--disk-cache-size=524288000 ',
+	        '--ignore-gpu-blocklist',
+            '--enable-gpu-rasterization',
+            '--enable-zero-copy-kiosk'
         ]
 
         if self.load_extension_path:
