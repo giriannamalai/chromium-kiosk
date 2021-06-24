@@ -237,7 +237,7 @@ def run():
     if config.CLEAN_START:
         chromium.clean_start()
 
-    chromium.set_urls([inject_parameters_to_url(config.HOME_PAGE, additional_parameters)])
+    chromium.set_urls([inject_parameters_to_url(config.HOME_PAGE, {})])
     chromium.run()
 
 
